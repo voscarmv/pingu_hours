@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Microverse Level-Up Schedule</title>
+    <script>
+      const localStart = new Date('August 19, 1975 14:00:00 UTC').toLocaleTimeString('en-US');
+      const localEnd = new Date('August 19, 1975 17:00:00 UTC').toLocaleTimeString('en-US');
+      const loadVals = (start, end) => {
+        document.getElementById("start").innerHTML = start;
+        document.getElementById("end").innerHTML = end;
+      };
+    </script>
+  </head>
+  <body onLoad="loadVals(localStart, localEnd);">
+    <big><big><big>
+      In your local time, we hold sessions from Monday to Saturday, from <span id="start"></span> to <span id="end"></span>.
+      <br><br>
+      Click <a href="https://www.addevent.com/calendar/RD377233">here</a> to set up a Google calendar reminder!
+    </big></big></big>
+  </body>
+</html>
